@@ -16,7 +16,7 @@ ENV PYPI_URL=https://pypi.python.org/
 ENV PYPI_INDEX_URL=https://pypi.python.org/simple
 
 # install pyinstaller
-RUN pip3 install pyinstaller==$PYINSTALLER_VERSION
+RUN pip3 install six pyinstaller==$PYINSTALLER_VERSION
 RUN ln -s /usr/bin/pip3 /usr/bin/pip
 
 RUN mkdir /src/
